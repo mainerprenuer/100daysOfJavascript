@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    //change the font color to red
+    // document.querySelector('#red').onclick = function() {
+    //     document.querySelector('#hello').style.color = 'red';
+    // }
+    document.querySelector('select').onchange = () => {
+            document.querySelector('#js') = this.value;
+        }
+    });
+
+    </script>
+</head>
+<body>
+    <h1 id="js">Do you like Javascript!</h1>
+    <select>
+        <option value="ilovejs">I love Javascript</option>
+        <option value="doulovejs">I want to learn Javascript</option>
+        <option value="ilovejs">I have no idea what Javascript really is</option>
+
+    </select>
+</body>
+</html>

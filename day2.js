@@ -1,5 +1,5 @@
 /*
-  ***************  EVEN & ODD SUMS Challenge ***************
+  ++++++++++++  EVEN AND ODD SUMS CHALLENGE +++++++++++++
   *
   *Task:
   ====================================
@@ -10,11 +10,11 @@
 
 function evenOddSums(arr) {
     // Classique method
-    // let oddSum = 0;
-    // let evenSum = 0;
-    // for(let num of arr)
-    //     num%2 === 0 ? evenSum += num : oddSum += num;
-    // return [ evenSum, oddSum];
+    let oddSum = 0;
+    let evenSum = 0;
+    for(let num of arr)
+        num%2 === 0 ? evenSum += num : oddSum += num;
+    return [ evenSum, oddSum];
 
     // 1st method
     // let evenOddSums= [0, 0];
@@ -28,7 +28,7 @@ function evenOddSums(arr) {
     // }, [0, 0]);
 
     // 3rd method
-    return [arr.filter(num => num % 2 === 0).reduce((a, b) => a + b), arr.filter(num => num % 2 !== 0).reduce((a, b) => a + b)];
+    // return [arr.filter(num => num % 2 === 0).reduce((a, b) => a + b), arr.filter(num => num % 2 !== 0).reduce((a, b) => a + b)];
 }
 
 
